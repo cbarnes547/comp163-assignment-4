@@ -58,3 +58,26 @@ if studying not in study_options:
     print(f"{studying} is not an available option.")
 
 print("")
+
+# test case 4
+low_social = 20
+high_social = 60
+
+has_low_social = social_points < low_social
+has_high_social = social_points > high_social
+
+if has_high_social is True:
+    print("You are highly social! Great networking opportunities ahead.")
+elif has_low_social is True:
+    print("Low social engagement maybe join a club or activity.")
+elif has_high_social is not True and has_low_social is not True:
+    print("Moderate social life you are balanced between school and friends.")
+else:
+    print("Stats unclear recheck your inputs.")
+
+print("\nFinal Stats:")
+print(f"Student Name: {student_name}")
+print(f"GPA: {current_gpa}")
+print(f"Study Hours: {study_hours}")
+print(f"Social Points: {social_points}")
+print(f"Stress Level: {stress_level}")
