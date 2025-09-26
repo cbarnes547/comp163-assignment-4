@@ -34,3 +34,27 @@ elif choice == "C":
 else:
     print("Invalid input.")
 print("")
+
+# test case 3
+study_options = ["Programming", "Math", "English", "History"]
+
+print("Available study options:")
+print(study_options)
+
+studying = input("Choose a study option: ")
+
+if studying in study_options:
+    if current_gpa >= 3.5 and social_points > 40:
+        print(f"{studying}: You are ready for an advanced workload.")
+    elif current_gpa < 3.0 or social_points < 20:
+        print(f"{studying}: Consider focusing on fewer courses.")
+    else:
+        print(f"{studying}: Moderate workload recommended.")
+else:
+    print("Invalid choice.")
+print("")
+
+if studying not in study_options:
+    print(f"{studying} is not an available option.")
+
+print("")
